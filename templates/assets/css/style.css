@@ -560,6 +560,17 @@ a:hover {
 .btn {
     transition: 0.5s ease;
 }
+.btn {
+    border: none; /* Remove border */
+    padding: 0; /* Remove padding for a short button */
+}
+
+.btn img {
+    width: 150px; /* Further increase size of the icon */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
 
 .btn.btn-a,
 .btn.btn-b {
@@ -590,13 +601,13 @@ a:hover {
 }
 
 .btn.btn-b-n {
-    background-color: rgb(240, 85, 85);
+    background-color: transparent;
     color: #0e3c6d;
     border-radius: 0;
 }
 
 .btn.btn-b-n:hover {
-    background-color: #26a356;
+    background-color: transparent;
     color: #0e3c6d;
 }
 
