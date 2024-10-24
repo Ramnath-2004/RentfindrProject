@@ -44,134 +44,149 @@
     <body>
         <!-- ******* Property Search div ******* -->
         <div class="click-closed"></div>
-        <!--/ Form Search Star /-->
-        <div class="box-collapse" style="background-color: white">
-            <div class="title-box-d">
-                <h3 class="title-d">Search Property</h3>
-            </div>
-            <span class="close-box-collapse right-boxed bi bi-x"></span>
-            <div class="box-collapse-wrap form">
-                <form class="form-a">
-                    <div class="row">
-                        <div class="col-md-12 mb-2">
-                            <div class="form-group">
-                                <label class="pb-2" for="Type">Keyword</label>
-                                <input
-                                    type="text"
-                                    class="form-control form-control-lg form-control-a"
-                                    placeholder="Keyword"
-                                />
-                            </div>
-                        </div>
-                        <div class="col-md-6 mb-2">
-                            <div class="form-group mt-3">
-                                <label class="pb-2" for="Type">Type</label>
-                                <select
-                                    class="form-control form-select form-control-a"
-                                    id="Type"
-                                >
-                                    <option>All Type</option>
-                                    <option>For Rent</option>
-                                    <option>For Sale</option>
-                                    <option>Open House</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mb-2">
-                            <div class="form-group mt-3">
-                                <label class="pb-2" for="city">City</label>
-                                <select
-                                    class="form-control form-select form-control-a"
-                                    id="city"
-                                >
-                                    <option>All City</option>
-                                    <option>Mumbai</option>
-                                    <option>Ahmedabad</option>
-                                    <option>Rourkela</option>
-                                    <option>Kanpur</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mb-2">
-                            <div class="form-group mt-3">
-                                <label class="pb-2" for="bedrooms"
-                                    >Bedrooms</label
-                                >
-                                <select
-                                    class="form-control form-select form-control-a"
-                                    id="bedrooms"
-                                >
-                                    <option>Any</option>
-                                    <option>01</option>
-                                    <option>02</option>
-                                    <option>03</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mb-2">
-                            <div class="form-group mt-3">
-                                <label class="pb-2" for="courtyard"
-                                    >Courtyard</label
-                                >
-                                <select
-                                    class="form-control form-select form-control-a"
-                                    id="Yards"
-                                >
-                                    <option>Any</option>
-                                    <option>01</option>
-                                    <option>02</option>
-                                    <option>03</option>
-                                    <option>04</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mb-2">
-                            <div class="form-group mt-3">
-                                <label class="pb-2" for="bathrooms"
-                                    >Bathrooms</label
-                                >
-                                <select
-                                    class="form-control form-select form-control-a"
-                                    id="bathrooms"
-                                >
-                                    <option>Any</option>
-                                    <option>01</option>
-                                    <option>02</option>
-                                    <option>03</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mb-2">
-                            <div class="form-group mt-3">
-                                <label class="pb-2" for="price"
-                                    >Min Price</label
-                                >
-                                <select
-                                    class="form-control form-select form-control-a"
-                                    id="price"
-                                >
-                                    <option>Unlimite</option>
-                                    <option>Rs.50,000</option>
-                                    <option>Rs.100,000</option>
-                                    <option>Rs.150,000</option>
-                                    <option>Rs.200,000</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                            <button type="submit" class="btn btn-b">
-                                Search Property
-                            </button>
-                        </div>
+       <!--/ Form Search Star /-->
+<div class="box-collapse" style="background-color: white">
+    <div class="title-box-d">
+        <h3 class="title-d">Predict SquareFeet Price</h3>
+    </div>
+    <span class="close-box-collapse right-boxed bi bi-x"></span>
+    <div class="box-collapse-wrap form">
+        <form class="form-a">
+            <div class="row">
+                <div class="col-md-12 mb-2">
+                    <div class="form-group">
+                        <label class="pb-2" for="squareFeet">Enter SquareFeet</label>
+                        <input
+                            type="text"
+                            class="form-control form-control-lg form-control-a"
+                            placeholder="Sqrfeet"
+                            id="squareFeet"
+                        />
                     </div>
-                </form>
+                </div>
+                <div class="col-md-6 mb-2">
+                    <div class="form-group mt-3">
+                        <label class="pb-2" for="district">District</label>
+                        <select
+                            class="form-control form-select form-control-a"
+                            id="district"
+                            onchange="updateAreas()"
+                        >
+                            <option>--Select District--</option>
+                            <option>Ariyalur</option>
+                            <option>Chengalpattu</option>
+                            <option>Chennai</option>
+                            <option>Coimbatore</option>
+                            <option>Cuddalore</option>
+                            <option>Dharmapuri</option>
+                            <option>Dindigul</option>
+                            <option>Erode</option>
+                            <option>Kallakurichi</option>
+                            <option>Kanchipuram</option>
+                            <option>Karur</option>
+                            <option>Krishnagiri</option>
+                            <option>Madurai</option>
+                            <option>Mayiladuthurai</option>
+                            <option>Nagapattinam</option>
+                            <option>Namakkal</option>
+                            <option>Ooty</option>
+                            <option>Perambalur</option>
+                            <option>Pudukkottai</option>
+                            <option>Ramanathapuram</option>
+                            <option>Salem</option>
+                            <option>Sivaganga</option>
+                            <option>Thanjavur</option>
+                            <option>Tiruvallur</option>
+                            <option>Tirunelveli</option>
+                            <option>Tiruppur</option>
+                            <option>Vellore</option>
+                            <option>Villupuram</option>
+                            <option>Virudhunagar</option>
+                            <!-- Add remaining districts here -->
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-2">
+                    <div class="form-group mt-3">
+                        <label class="pb-2" for="area">Area</label>
+                        <select
+                            class="form-control form-select form-control-a"
+                            id="area"
+                        >
+                            <option>--Select Area--</option>
+                        </select>
+                    </div>
+                </div>
+            </div><br><br>
+            <div class="col-md-12">
+                <button type="submit" class="btn btn-b">
+                    Predict Price
+                </button>
             </div>
-        </div>
-        <!-- End Property Search div -->>
+        </form>
+    </div>
+</div>
 
-        <!-- ======= Header/Navbar ======= -->
+<script>
+    const areas = {
+        "Ariyalur": ["Rajajinagar", "Near sivan kovil temple", "Ethraj Nagar"],
+        "Chengalpattu": ["Sai Nagar", "Alapakkam", "Pallava garden Pulipakkam", "Singaperumal Koil", "J C K Nagar", "Maraimalai Nagar", "Teachers Colony Nenmeli", "Sai Nagar Allapakkam", "Nenmeli", "Urapakkam", "Krishna nagar", "Chettipuniyam", "Mahindra World City", "Back side F8 cinemas Anna Nagar", "Paranur", "Chettipunniyam"],
+        "Chennai": ["West Jafferkhanpet", "Sithalapakkam", "Korattur", "Avadi", "Sholinganallur", "Kovur", "Alapakkam", "Thirupathi Nagar", "Anna nagar", "Ambattur", "VGP Layout Cholamandal Artists Village", "Navalur", "Porur", "Alwarpet", "RA Puram", "Chinna Neelankarai", "Kotturpuram"],
+        "Coimbatore": ["Saibaba Colony", "Pallapalayam", "Nehru nagar Housing unit", "Gandhi Park", "Kavundampalayam", "Venkitta Puram", "Othakalmandapam", "Venkatapuram", "Anna Nagar", "Peelamedu", "Malumichampatti", "Singanallur", "Krishna Garden Singanallur", "Sulur", "KK Pudur", "Selvapuram South", "Irugur", "Ganapathy", "Vilankurichi"],
+        "Cuddalore": ["Arumuganar Nagar", "Kumarapettai", "Graded Community", "Nayveli", "Chidambaram", "Koothapakkam", "Chavadi", "Tittakudi", "Vannarapalayam", "Vadalur", "Velisemmandalam", "Manjakuppam", "Virudhachalam", "Kondur", "Semmandalam", "Aanaikuppam"],
+        "Dharmapuri": ["Dharmapuri", "virupatchipuram", "Bharathipuram", "Gandhinagar", "Anjaneyur Kovil Street", "Pidamaneri", "Oddapatti", "Agraharam", "Karimangalam", "mathopu", "Palacode", "near municipal office", "Vediyappan thidhu", "Vennampatty", "Near ARP quarters", "Settikara", "TNHB colony", "Virupakshipuram", "Viswanathan nagar"],
+        "Dindigul": ["Modern nagar", "Chettinayakanpatti", "ellumaliyan nagar", "Moovendar Nagar", "MVM Nagar", "Oddanchatram", "Kaveri Nagar", "Thadikombu", "Nandavanapatti", "Begambur", "Devasahayam nagar", "Masilamanipuram", "GS NAGAR", "Mendonsa Colony", "Nagal Nagar", "Seelapadi Mahalakshmi Nagar", "Gujiliamparai", "nagal pudhur", "Arunachal nagar", "kamatchi nagar"],
+        "Erode": ["Perundurai Road", "B P Agraharam", "Mettukadai", "Sanjay Nagar", "Sampath Nagar", "Shastri Nagar", "Gobichettipalayam", "Solar Pirivu", "Modakurichi", "Veerappanchatram", "Erode Fort", "Teachers Colony", "Veepampalayam", "Thindal", "Chithode", "NEAR BVB CBSC SCHOOL"],
+        "Kallakurichi": ["Vasanthi illam"],
+        "Kanchipuram": ["Enathur", "Sevlimedu", "Kolathur", "Kancheepuram", "Chengalpattu", "Konerikuppam", "Pillayar palayam", "Chinna Kanchipuram", "Pillaiyarpalayam", "Abdullapuram", "Casagrand Arena", "Ennaikaran", "GV Construction Kanchipuram"],
+        "Kanyakumari": ["Ponnappa Nadar Colony", "Thuckalay", "Karungal", "Kulasekharam", "Suchindram", "Nagercoil", "Kottaram", "neela kanda swamy temple", "Asaripallam", "Agasteeswaram", "Palliyadi", "Vellamadam", "Vettuvenni", "palliyady", "Marthandam"],
+        "Karur": ["Vadivel Nagar", "Vennamalai", "Anbu Nagar", "Jawahar Bazaar", "Gowripuram extension2nd cross", "Andankoil East", "Rayanur", "Gandhigramam", "Thanthonimalai", "Vengamedu", "Reddipalayam", "Kamarajapuram", "Gandhigramam", "Gandhi Puram"],
+        "Krishnagiri": ["Kundarapalli", "Bargur", "Kattiganapalli", "Appanna Rao Street", "Sathya Sai Nagar", "MIG 153 1st Phase New Housing Board", "Pochampalli", "Shoolagiri", "Kaveripattinam", "Thiruvalluvar nagar", "TNHB", "Karapalli", "Kathujuganapalli", "Natarajan Layout", "Mookondapalli", "Somarpettai", "Eluvappalli", "Peddathalapalli", "Rajaji Nagar 7th Cross", "VKN stores", "Mathigiri"],
+        "Madurai": ["Nehru Nagar", "Nataraja Nagar", "Gomathipuram", "Vilangudi", "Otthakadai", "S Alangulam", "Kalavasal", "Mattuthavani", "Nagamalaipudukottai", "Surya Nagar", "Thiruparankundram", "Anaiyur", "Keelavasal", "Thiruppalai", "Sikkandar Savadi", "TPM NagarVirattipathu", "Avaniyapuram", "Uthangudi", "Muthu Patti", "Paravai", "THEPPAKULAM", "Alagappan Nagar"],
+        "Mayiladuthurai": ["Kamarajar Salai", "Koranad", "Nalathukkudi", "Cauvery nagar", "Senthangudi", "Dharmapuram"],
+        "Nagapattinam": ["Manjakollai", "Neela North Street", "Mayiladuthurai", "kilvelur", "Velippalayam"],
+        "Namakkal": ["Cauvery nagar", "Andavar Nagar", "Vathiyar thottam Rasipuram", "Mullai Nagar AS Pettai", "Tiruchengode", "Periyannan street RP pudur", "Bodhu Patty", "kongunagar namakka", "Kondichettipatti", "NGO Colony Chinnamuthalaipatti", "KMC Street", "Anbu Nagar2", "Salem Road RP pudur", "Kosavampatti", "S P Pudur", "Magilam residancy  Budan Santhai", "Ganga Nagar", "RP Pudur", "Thiruvalluvar Colony", "Kamaraj Nagar", "Chinnamuthalaipatti"],
+        "Ooty": ["Kotagiri", "Muthorai Palada", "Coonoor", "Fern Hill", "Ooty liberty theater Upper Bazar", "Havelock Road Sai Dharshan", "Main City", "Coonoor main city"],
+        "Perambalur": ["Eruvadi", "Alundur", "Vellalapatti", "Peddanapatti", "Oothukottai", "Selva Nagar", "Sappani", "Sikkandar", "Srikaranai", "Pothanur", "Peraiyur", "Pattakudi"],
+        "Pudukkottai": ["Pudukkottai", "Thiruvarankulam", "Kandarvakkottai", "Thiruvarankulam", "Pudukkottai"],
+        "Ramanathapuram": ["Peraiyur", "Palakkudi", "Karaikudi", "Katchal", "Koodal", "Kilakarai", "Maruthur", "Muthupatti", "Muthupatti", "Koodal", "Maruthur", "Ramanathapuram"],
+        "Salem": ["Loyola College", "Sundaravadi", "Sankari", "Salem City", "Omalur", "Mettur", "Erode Main Road", "Sankari", "Alagapuram", "Karuvadi", "Brahmapuram", "Kalipatti", "Pallapatti", "Ganesh Nagar"],
+        "Sivaganga": ["Kumaran Kovil", "Sivaganga", "Puthupatti", "Kattur", "Vallinayakanpatti", "Puthupatti", "Annavasal", "Thekkur", "Puthu Kulam", "Kottaiyur", "Vembakkottai", "Vembakkottai", "Kumaran Kovil", "Nagarathar", "Tiruppuvanam"],
+        "Thanjavur": ["Thanjavur", "Muthurajapuram", "Valangaiman", "Mankottai", "Thirukokarnam", "Puthuthalainayakan", "Thirukkandiyur", "Rudrasai", "Sakkottai", "Kothangudi", "Nadavarayanpatti"],
+        "Tiruvallur": ["Ibrahim patnam", "Periyapalayam", "Kundrathur", "Nandi Kovil", "Madhavaram", "Vadamadurai", "Redhills", "Pakkam", "Siddha Bavi", "Sriperumbudur", "Thirumazhisai", "Thirunindravur", "Tiruvallur"],
+        "Tirunelveli": ["Tirunelveli", "Raja Nagar", "Tenkasi", "Alangulam", "Puthiamputhur", "Vellamundam", "Ettaiyapuram", "Shenkottai", "Nellai", "Thirumangalam", "Sankarankovil"],
+        "Tiruppur": ["Pudupatti", "Kangayam", "Tiruppur", "Palladam", "Perumanallur", "Kaniyur", "Sivasakthi Nagar", "Pattaiyadi", "Sanjay Nagar", "Karamadai", "Chinnappampatti", "Kongu Nagar", "Vettuvankulam", "Dharamapuri", "Vettuvankulam"],
+        "Vellore": ["Alamelumangapuram", "Governer's Garden", "Tiruvannamalai", "Jainschool", "Puthur", "Uthangarai", "Ameerpet", "Kottakuppam", "Vaniyambadi", "Kammiyampettai", "Puthur", "Sathuvachari", "Puduvettai", "Jakkar", "Thunjaipallam", "Tiruvalangadu"],
+        "Villupuram": ["Villupuram", "Kandachipuram", "Mangalampadi", "Nambiyur", "Elavanasur", "Chennasamy Nagar", "Karuvakkadu", "Vadakkupattu", "Kamakshipuram", "Puthur", "Kottapattu", "J K Nagar", "Kakkaiyur", "Vikramangalam", "Boganapudi", "Vadipatti", "Mettukudi", "Sankaranpatti", "Melmaruvathur", "Nambiyur", "Nambiyur", "Sivaganga", "Nagapattinam"],
+        "Virudhunagar": ["Virudhunagar", "Sivakasi", "Kamaraj Nagar", "Muthupatti", "Sangam Nagar", "Mottapatti", "Kottaiyur", "Sakkottai", "Rajapalayam", "Sivakasi", "Virudhunagar", "Muthupatti", "Akkampatti", "Thiruthangal", "Kothai", "Tiruchuli"]
+
+    };
+
+    function updateAreas() {
+        const districtSelect = document.getElementById('district');
+        const areaSelect = document.getElementById('area');
+        const selectedDistrict = districtSelect.value;
+
+        // Clear the area dropdown
+        areaSelect.innerHTML = '<option>--Select Area--</option>';
+
+        // Populate the area dropdown based on selected district
+        if (areas[selectedDistrict]) {
+            areas[selectedDistrict].forEach(area => {
+                const option = document.createElement('option');
+                option.value = area;
+                option.textContent = area;
+                areaSelect.appendChild(option);
+            });
+        }
+    }
+</script>
+
+
+        <!-- ******* Header/Navbar ******* -->
         <nav
             class="navbar navbar-default navbar-trans navbar-expand-lg fixed-top"
+            style="background-color: white"
         >
             <div class="container">
                 <button
@@ -197,7 +212,9 @@
                 >
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
+                            <a class="nav-link active" href="index.html"
+                                >Home</a
+                            >
                         </li>
 
                         <li class="nav-item">
@@ -205,10 +222,11 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link active" href="property-grid.html"
+                            <a class="nav-link" href="property-grid.html"
                                 >Property</a
                             >
                         </li>
+
 
                         <li class="nav-item dropdown">
                             <a
@@ -243,9 +261,10 @@
                     class="btn btn-b-n navbar-toggle-box navbar-toggle-box-collapse"
                     data-bs-toggle="collapse"
                     data-bs-target="#navbarTogglerDemo01"
-                >
-                    <i class="bi bi-search"></i>
+                    >
+                    <img src="assets/img/icon.png" alt="Search Icon">
                 </button>
+
             </div>
         </nav>
         <!-- End Header/Navbar -->
